@@ -1,0 +1,15 @@
+Seccion4,5,7,8 Domingo 13
+Seccion 8,9,10,11,12,13 Lunes 14
+Seccion 14,15,16,17,18 martes 15
+Seccion 19, 20,21 miercoles 16
+Seccion 21 22 jueves 17
+- Empezar con el proyecto
+Seccion 1,2,3,4,5 viernes 18
+secciones 6,7,8,9 sabado 19
+Secciones 19,11,12 domingo 20
+-Nodejs
+Secciones 13,15,15,16 lunes 20
+Secciones 17,18,19, 20 martes 21
+Secciones 21 y22 miercoles 22
+
+Domingo 13 de julio 2025 empeze a las 12:40 curso de vuejs 
