@@ -14,24 +14,21 @@
 
 
 <script lang="ts" setup>
-import { computed, ref } from 'vue';
-
-    interface Props{
+import { useCounter } from '@/composables/uuseCounter';
+interface Props{
         value:number
     }
 
     const props = defineProps<Props>()
 
-    const counter =  ref(props.value );
-    const square = computed(()=> counter.value * counter.value);
+    const { counter,
+square,
+decrementar,
+incrementar, } = useCounter(props.value);
 
-    const incrementar = ()=>{
-        counter.value = counter.value + 1;
-    }
+    
 
-    const decrementar = ()=>{ 
-        counter.value = counter.value - 1;
-    }
+    
     
 </script>
 

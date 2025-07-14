@@ -14,6 +14,7 @@
 
 
 <script lang="ts">
+import { useCounter } from '@/composables/uuseCounter';
 import { computed, defineComponent, ref } from 'vue';
 
 export default defineComponent(
@@ -23,22 +24,14 @@ export default defineComponent(
         },
 
         setup(props){
-                const counter =  ref(props.value);
-                const square = computed(()=> counter.value * counter.value);
-                    const incrementar = ()=>{
-        counter.value = counter.value + 1;
-    }
-
-    const decrementar = ()=>{ 
-        counter.value = counter.value - 1;
-    }
-                return {
-                    counter,
-                    square,
-
-                    incrementar,
-                    decrementar
-                }
+            const { 
+                counter,
+                square,
+                decrementar,
+                incrementar, } = useCounter(props.value);
+            return{counter,square,
+            decrementar,
+            incrementar,}
         }
     }
 )
