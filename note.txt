@@ -1,5 +1,5 @@
-Seccion4,5,7,8 Domingo 13
-Seccion 8,9,10,11,12,13 Lunes 14
+Seccion4,5,7 Domingo 13
+Seccion 9,11,12,13 Lunes 14
 Seccion 14,15,16,17,18 martes 15
 Seccion 19, 20,21 miercoles 16
 Seccion 21 22 jueves 17
