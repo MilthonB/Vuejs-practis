@@ -44,9 +44,9 @@ const router = createRouter({
                 
                 return isNaN(id) ? {id:1} : {id}
             },
-            beforeEnter:[
-                isAuthenticatedGuard
-            ],
+            // beforeEnter:[
+            //     isAuthenticatedGuard
+            // ],
             component: () => import('@/modules/pokemon/pages/PokemonPage.vue')
         }
             ]

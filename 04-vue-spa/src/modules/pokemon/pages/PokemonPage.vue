@@ -6,11 +6,11 @@
 
         <img 
         class="w-[200px] h-[200px] mt-5" 
-        :src="`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/${id}.svg`" alt="PokemonName">
+        :src="imgUrl" alt="PokemonName">
         
         <RouterLink 
         class="bg-blue-500 text-white p-2 rounded mt-5 text-center hover:bg-blue-700"
-        :to="{name: 'pokemon', params: {id: id + 1}}">
+        :to="{name: 'pokemon', params: {id: id + 1}}"> 
             Siguiente
         </RouterLink>
     </section>
@@ -19,12 +19,17 @@
 
 
 <script setup lang="ts">
+import { computed } from 'vue';
+
 
 
 interface Props{
     id: number;
 }
 const props = defineProps<Props>();
+
+
+const imgUrl =  computed(()=> `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/${props.id}.svg`)
 
 
 </script>
