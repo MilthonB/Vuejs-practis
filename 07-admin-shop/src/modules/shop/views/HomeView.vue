@@ -87,7 +87,7 @@ watch(
 
 watchEffect(()=>{
   queryClient.prefetchQuery({
-    queryKey: ['products', { page:page.value +1 }],
+    queryKey: ['products', { page: page.value +1 }],
     queryFn: ()=> getProducutos(page.value +1 )
     
   })
